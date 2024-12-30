@@ -20,7 +20,7 @@
 - 供養も兼ねて元の発想のまま修正して通してみる
 
 ### Step１のコード
-‘’’Python
+```Python
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         node = head
@@ -33,7 +33,7 @@ class Solution:
             node = node.next
 
         return head
-‘’’
+```
 
 ## Step 2
 ### 学んだこと
@@ -41,7 +41,7 @@ class Solution:
 ### Step２のコード
 - 練習のため再帰で書いてみた。若干写経っぽくなってしまったので、別の問題でリベンジしたい。
 - まんま写経だと身に付かなそうだったので今回再帰を書く時は伝言ゲームをイメージしてみたら少し納得感を持って書けた。 「責任者（番号が変わる前の最後の人）は君？違うなら責任者に行き着くまで伝言ゲームをして、責任者には僕に折り返す様に連絡しといて。あと責任者のアドレスリスト作りたいから、見つかった責任者にも同じ指示をするよう伝えといて」のようなイメージで書いてみた。
-‘’’Python
+```Python
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if head is None:
@@ -53,11 +53,11 @@ class Solution:
         node.next = self.deleteDuplicates(node.next)
 
         return node
-‘’’
+```
 
 - Continue使ったことなかったけど結構みんな使ってる。入れ子のif elseと等価に使ったりできるらしい。確かにスッキリしてるし使ってみても良さそう。： https://github.com/tarinaihitori/leetcode/pull/3/files#r1808004503
 ### Step２のコード（練習のためcontinue使って書いてみた）
-‘’’ Python
+``` Python
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         node = head
@@ -69,7 +69,7 @@ class Solution:
             node = node.next
 
         return head
-‘’’
+```
 
 - Current.next is not noneについて同じ不安を持つことが多かったので勉強になった： https://github.com/ichika0615/arai60/pull/3/files#r1812079706 
 - x and yがif x is false, then x, else yなのも初めて知った…。先人がメモってくれてなかったら気づけなかったのでありがたい。https://github.com/ichika0615/arai60/pull/3/files#r1812247443 。
@@ -86,7 +86,7 @@ https://discord.com/channels/1084280443945353267/1195700948786491403/11963993531
 
 ### Step３のコード
 
-‘’’Python
+```Python
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         node = head
 
@@ -95,4 +95,4 @@ https://discord.com/channels/1084280443945353267/1195700948786491403/11963993531
                 node.next = node.next.next
             node = node.next
         return head
-‘’’
+```
