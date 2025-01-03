@@ -47,7 +47,8 @@ class Solution:
                 node.next = node.next.next
             node = node.next
 
-        return dummy.next```
+        return dummy.next
+```
 
 ## Step 2
 ### 学んだこと
