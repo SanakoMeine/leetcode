@@ -90,7 +90,7 @@ class Solution:
 ```
 
 ## 悩んだけれど最終的にこっちで書いた
-‘’’
+```Python
 class Solution:
     def isValid(self, s: str) -> bool:
         bracket_pairs = {"(": ")", "[": "]", "{": "}"}
@@ -107,6 +107,6 @@ class Solution:
             stack.pop()
 
         return len(stack) == 0
+```
 
-‘’’
 
