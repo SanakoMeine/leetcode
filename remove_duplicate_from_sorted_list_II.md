@@ -148,3 +148,25 @@ class Solution:
 
         return sentinel.next
 ```
+### Step4？
+しっくり来てなかったので日をおいて解き直し
+```Python
+class Solution:
+    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        sentinel = ListNode(0, head)
+        ptr = sentinel
+
+        while ptr:
+            scan = ptr
+            if scan.next and scan.next.next and scan.next.val == scan.next.next.val:
+                while (
+                    scan.next and scan.next.next and scan.next.val == scan.next.next.val
+                ):
+                    scan.next = scan.next.next
+                scan.next = scan.next.next
+            else:
+                ptr.next = scan.next
+                ptr = ptr.next
+
+        return sentinel.next
+```
