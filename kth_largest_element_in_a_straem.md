@@ -1,6 +1,6 @@
 # 703. Kth longest elements
 問題文：https://leetcode.com/problems/kth-largest-element-in-a-stream/description/
-次に解く：https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/
+次に解く：https://leetcode.com/problems/top-k-frequent-elements/description/
 
 ## 参考にした方々（Pythonで書かれた直近５名）
 - https://github.com/rinost081/LeetCode/pull/9/files
