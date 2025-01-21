@@ -57,7 +57,7 @@ class KthLargest:
 ## Step 2
 ### 学んだこと
 - self.nums=numsとしてもミュータブルなリストは参照渡しされるのか…。copy()しておこう：https://github.com/frinfo702/software-engineering-association/pull/11/files
-- 読んだことないならheapの公式ドキュメントは読んでおこうとのこと：https://docs.python.org/3/library/heapq.html#heapq.heappushpop
+- 読んだことないならheapの公式ドキュメントは読んでおこうとのこと（nlargestとかあるな）：https://docs.python.org/3/library/heapq.html#heapq.heappushpop
 - Heapifyする代わりにaddで回すのは読みやすくて行数も短いので確かに良さそう。
 - top_k_heapはわかりやすいので頂戴しよう
 - Heapを知らない自分でも解ける方法はあったのか…：https://github.com/rinost081/LeetCode/pull/9/files のstep1
