@@ -27,7 +27,7 @@ class Solution:
 
 - ここで答えを見ると、x^n = (x^(n/2))^2の操作を繰り返すと計算回数を減らせると知ったので書き直してみる。
 - 愚直にPowを２回呼び出すと結局再帰呼び出し回数に引っかかってしまうので、temp的な変数（half…）に入れ直す
-- Nが小数の時とかどうしてるんだろう→先人のgitにPowのプログラムへのリンクがあり、生まれて初めてCPythonのソースコードを読んでみたい気になる。が、手も脚も出ない：https://github.com/python/cpython/blob/d5ba4fc9bc9b2d9eff2a90893e8d500e0c367237/Objects/longobject.c#L4849
+- nが小数の時とかどうしてるんだろう→先人のgitにPowのプログラムへのリンクがあり、生まれて初めてCPythonのソースコードを読んでみたい気になる。が、手も脚も出ない：https://github.com/python/cpython/blob/d5ba4fc9bc9b2d9eff2a90893e8d500e0c367237/Objects/longobject.c#L4849
 
 ```Python
 class Solution:
