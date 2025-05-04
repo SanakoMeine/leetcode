@@ -83,5 +83,22 @@ class Solution:
 
         top_k_elements = sorted_numbers_of_appearance[:k]
 
-        return top_k_elements```
+        return top_k_elements
+```
+
+## Step 4
+時が経ったので復習がてら整理
+```Python
+class Solution(object):
+    def topKFrequent(self, nums, k):
+        nums2counts = defaultdict(int)
+
+        for num in nums:
+            nums2counts[num] += 1
+
+        sorted_nums2counts = sorted(nums2counts, key=nums2counts.get, reverse=True)
+
+        return sorted_nums2counts[:k]
+
+```
 
