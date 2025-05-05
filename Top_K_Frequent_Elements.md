@@ -10,7 +10,8 @@
 ## Step 1
 ### 考えたこと
 - 辞書を使いそう…だけど具体的にどうするかまで全くつながらなずギブアップ(getすら知らなかった…)、LeetCodeから答えをみて通るまで試す。
-- “for key, val”とかから使い慣れていないし、keyとvalをタプルにして一緒にheappushできるのも知らなかったしで、この辺の処理は今の自分からは絶対出てこないな…。
+- [“for key, val”](https://docs.python.org/ja/3/tutorial/datastructures.html#looping-techniques)とかから使い慣れていないし、keyとvalをタプルにして一緒にheappushできるのも知らなかったしで、この辺の処理は今の自分からは絶対出てこないな…。
+    
 
 ```Python
 class Solution:
